@@ -1,4 +1,4 @@
-package com.fupengpeng.database;
+package com.fpp.database;
 
 import java.io.IOException;
 import java.io.InputStream;

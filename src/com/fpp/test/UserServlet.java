@@ -46,5 +46,25 @@ public class UserServlet extends BaseServlet {
 		}
 
 	}
+	
+	/**
+	 * 
+	 * @Description: 注册   http://localhost:8080/Summarize/UserServlet?method=register&account=zhangsan&phonenumber=17712345678
+	 * @Title: register 
+	 * @param request
+	 * @param response
+	 * @return
+	 * @throws ServletException
+	 * @throws IOException
+	 * String
+	 */
+	public String register(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		//1.获取到传递过来的数据
+		String name = request.getParameter("account");
+		String phonenumber = request.getParameter("phonenumber");
+		//2.保存至数据，返回注册成功
+		return "zhuce chenggong";
+	}
 
 }
